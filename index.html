@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PHAM Japanese Language Class</title>
+  <title>制作途中ページの警告</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<script>
+  // ページ読み込み時に警告を出す
+  window.onload = function() {
+    const proceed = confirm("本ページは制作途中です。続けて見ますか？");
+    if (!proceed) {
+      // 「いいえ」を選んだらトップページなどに移動
+      window.location.href = "https://example.com"; // 遷移先URLを変えてね
+    }
+    // 「はい」を選ぶとそのままページ表示
+  };
+</script>
+
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- ヘッダー -->
+  <header class="bg-blue-600 text-white p-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">PHAM ROOM</h1>
+      <nav>
+        <ul class="flex space-x-4">
+            <li><a href="#about" class="hover:underline">PHAM</a></li>
+            <li><a href="#lessons" class="hover:underline">授業内容</a></li>
+            <li><a href="#teachers" class="hover:underline">講師紹介</a></li
+            <li><a href="#testimonials2" class="hover:underline">受講生の声・体験談</a></li>
+            <li><a href="#contact" class="hover:underline">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- メインビジュアル -->
+  <section class="bg-gray-100 py-20 text-center" id="main">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-4">ベトナム人と日本人講師による<br>本格的な日本語レッスン</h2>
+      <p class="text-lg text-gray-600">初級〜JLPTまで対応。オンラインで安心・手軽に学習できます。</p>
+      <a href="#contact" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">体験レッスンを申し込む</a>
+    </div>
+  </section>
+
+  <!-- 紹介 -->
+  <section class="py-16 px-4 bg-white" id="about">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-6">PHAMについて</h3>
+      <p class="text-gray-700 text-lg">
+        日本在住のベトナム人講師と日本人講師が、やさしく、分かりやすく日本語を教えます。<br>
+        主にベトナム人向けですが、英語も対応しているので、多国籍の方も歓迎です。
+      </p>
+    </div>
+  </section>
+
+
+<!-- 講師紹介 -->
+<section class="py-16 px-4 bg-gradient-to-r from-gray-100 via-white to-gray-100" id="teachers">
+  <div class="max-w-6xl mx-auto text-center">
+    <h3 class="text-4xl font-extrabold mb-12 text-gray-800 tracking-wide">講師紹介</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+      <!-- PHAM先生（親しみやすく控えめに） -->
+      <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border-2 border-blue-300">
+        <img src="data:image/png;base64,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" alt="PHAM先生の写真" class="w-40 h-40 mx-auto rounded-full mb-6 object-cover border-4 border-blue-400 shadow-sm" />
+        <h4 class="text-2xl font-semibold mb-3 text-blue-600">PHAM先生（ベトナム人）</h4>
+        <p class="text-gray-700 leading-relaxed whitespace-pre-line text-base">
+          ベトナム出身の女性先生。<br>独自で日本語を習得し、日常会話でも問題のない語彙力を手に入れた。<br>ベトナム人という観点からとても親身に感じて質問もしやすいだろう。
+        </p>
+      </div>
+
+      <!-- 佐竹先生（高級感アップ） -->
+      <div class="bg-white rounded-xl shadow-2xl p-10 hover:shadow-3xl transition-shadow duration-300 border-4 border-green-400">
+        <img src="data:image/png;base64,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" alt="佐竹先生の写真" class="w-44 h-44 mx-auto rounded-full mb-6 object-cover border-4 border-green-600 shadow-md" />
+        <h4 class="text-3xl font-extrabold mb-4 text-green-700">佐竹先生（純日本人）</h4>
+        <p class="text-gray-800 leading-relaxed whitespace-pre-line text-lg">
+          ベトナム出身のPHAM先生の助手アシスタント。<br>純日本人で日本語は完璧にこなす。<br>心強い味方である。<br>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- 授業内容 -->
+  <section class="bg-gray-50 py-16 px-4" id="lessons">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-semibold text-center mb-10">授業内容・料金</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-bold mb-2">初級〜中級</h4>
+          <p class="text-gray-600 mb-4">日常会話・文法・発音</p>
+          <p class="font-bold text-blue-600">1回 2,000円〜</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-bold mb-2">JLPT対策</h4>
+          <p class="text-gray-600 mb-4">N5〜N2対応</p>
+          <p class="font-bold text-blue-600">1回 2,500円〜</p>
+        </div>
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-bold mb-2">オンライン形式</h4>
+          <p class="text-gray-600 mb-4">Zoom／Google Meet対応</p>
+          <p class="font-bold text-blue-600">全国・海外OK</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- 特徴・強みセクション -->
+<section class="bg-white py-16 px-4" id="features">
+
+  <div class="max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold text-center mb-6">PHAM ROOMの特徴と強み</h3>
+    <p class="text-lg mb-4">
+      PHAM ROOMの最大の特徴は、経験豊富な2人の講師陣による手厚いサポートです。
+    </p>
+    <p class="text-lg mb-4">
+      <strong>PHAM先生（ベトナム人・多言語話者）</strong>は、学習者と同じ文化背景を持ち、言葉の壁や不安をしっかり理解。多言語のスキルと親しみやすい人柄で、生徒が安心して相談できる環境を作ります。
+    </p>
+    <p class="text-lg mb-4">
+      <strong>佐竹先生（純日本人）</strong>は、純日本人という、絶対的な安心感。人生の経験歴はPHAM先生よりも豊富。
+    </p>
+
+  </div>
+</section>
+
+
+<!-- 料金プラン詳細 -->
+<section class="bg-gradient-to-r from-blue-50 via-white to-green-50 py-20 px-6" id="pricing">
+  <div class="max-w-5xl mx-auto">
+    <h3 class="text-4xl font-extrabold text-center mb-12 text-blue-800 drop-shadow-lg">料金プラン</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <!-- ライトプラン -->
+      <div class="bg-white rounded-xl shadow-lg border-4 border-blue-400 p-8 transform hover:scale-105 transition-transform duration-300">
+        <h4 class="text-2xl font-bold text-blue-600 mb-4">ライトプラン</h4>
+        <p class="text-lg text-gray-700 mb-6">週1回（45分）／月4回のレッスン</p>
+        <p class="text-4xl font-extrabold text-blue-700 mb-4">¥6,000</p>
+        <p class="text-sm text-gray-500">初心者向けの気軽なプラン</p>
+      </div>
+      <!-- スタンダードプラン -->
+      <div class="bg-white rounded-xl shadow-lg border-4 border-green-400 p-8 transform hover:scale-105 transition-transform duration-300">
+        <h4 class="text-2xl font-bold text-green-600 mb-4">スタンダードプラン</h4>
+        <p class="text-lg text-gray-700 mb-6">週2回（45分）／月8回のレッスン</p>
+        <p class="text-4xl font-extrabold text-green-700 mb-4">¥11,000</p>
+        <p class="text-sm text-gray-500">しっかり学びたい方向け</p>
+      </div>
+      <!-- プレミアムプラン -->
+      <div class="bg-white rounded-xl shadow-lg border-4 border-red-400 p-8 transform hover:scale-105 transition-transform duration-300">
+        <h4 class="text-2xl font-bold text-red-600 mb-4">プレミアムプラン</h4>
+        <p class="text-lg text-gray-700 mb-6">週4回（45分）／月16回のレッスン</p>
+        <p class="text-4xl font-extrabold text-red-70
+
+
+<!-- 受講の流れ -->
+<section class="bg-gradient-to-r from-purple-50 via-white to-pink-50 py-20 px-6" id="flow">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-4xl font-extrabold text-center mb-12 text-purple-700 drop-shadow-lg">受講の流れ</h3>
+    <div class="flex flex-wrap justify-center gap-10 text-center">
+      
+      <div class="flex flex-col items-center flex-1 min-w-[250px] max-w-sm hover:scale-105 transform transition duration-300">
+        <div class="bg-purple-600 text-white rounded-full w-16 h-16 flex items-center justify-center mb-4 text-2xl font-bold shadow-lg">①</div>
+        <h4 class="font-semibold text-purple-800 mb-2">お問い合わせ</h4>
+        <p class="text-gray-700">まずは気軽にお問い合わせフォームからご連絡ください。</p>
+      </div>
+      
+      <div class="flex flex-col items-center flex-1 min-w-[250px] max-w-sm hover:scale-105 transform transition duration-300">
+        <div class="bg-purple-600 text-white rounded-full w-16 h-16 flex items-center justify-center mb-4 text-2xl font-bold shadow-lg">②</div>
+        <h4 class="font-semibold text-purple-800 mb-2">日程調整</h4>
+        <p class="text-gray-700">講師と日程調整し、軽いコミュニケーションを体験。</p>
+      </div>
+      
+      <div class="flex flex-col items-center flex-1 min-w-[250px] max-w-sm hover:scale-105 transform transition duration-300">
+        <div class="bg-purple-600 text-white rounded-full w-16 h-16 flex items-center justify-center mb-4 text-2xl font-bold shadow-lg">③</div>
+        <h4 class="font-semibold text-purple-800 mb-2">授業スタート</h4>
+        <p class="text-gray-700">ゆるく授業に入りますが、興味があれば深く教えます。安心して学べます。</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 教材とサポート -->
+<section class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 py-20 px-6" id="materials">
+  <div class="max-w-5xl mx-auto text-center text-white">
+    <h3 class="text-4xl font-extrabold mb-8 drop-shadow-lg">教材と学習サポート</h3>
+    <p class="text-lg max-w-3xl mx-auto mb-12 drop-shadow-md">
+      市販の人気日本語教科書をベースに、効率よく学習を進めます。<br>
+      さらにオンラインサポート体制を充実させ、授業外の質問や疑問にも迅速に対応。<br>
+      あなただけの学習プランで、無理なく着実にステップアップできます。
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white bg-opacity-30 rounded-lg p-6 shadow-lg hover:scale-105 transform transition duration-300">
+        <h4 class="text-2xl font-semibold mb-4">実用的な教材</h4>
+        <p>日本で評価されている教科書を中心に、実際に使える言葉を学習。</p>
+      </div>
+      <div class="bg-white bg-opacity-30 rounded-lg p-6 shadow-lg hover:scale-105 transform transition duration-300">
+        <h4 class="text-2xl font-semibold mb-4">オンラインサポート</h4>
+        <p>LINEやメールでの質問対応や学習相談をいつでも受付中。</p>
+      </div>
+      <div class="bg-white bg-opacity-30 rounded-lg p-6 shadow-lg hover:scale-105 transform transition duration-300">
+        <h4 class="text-2xl font-semibold mb-4">個別フォローアップ</h4>
+        <p>進捗に合わせたアドバイスや課題を提供し、目標達成をサポート。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- 受講生の声・体験談 -->
+<section class="bg-white py-16 px-4" id="testimonials2">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-3xl font-semibold text-center mb-10">受講生の声</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div class="testimonial p-6 rounded-lg shadow-md border-2 border-blue-400 bg-blue-100 hover:shadow-lg transition cursor-pointer">
+        <div class="testimonial-content max-h-0 overflow-hidden transition-all duration-500">
+          <p class="text-blue-900 text-lg italic">「実際に日本に行った際、日本人から日本語が上手だと褒められました。」</p>
+        </div>
+        <p class="mt-4 font-semibold text-blue-800">— Aさん（ベトナム）</p>
+      </div>
+
+      <div class="testimonial p-6 rounded-lg shadow-md border-2 border-green-400 bg-green-100 hover:shadow-lg transition cursor-pointer">
+        <div class="testimonial-content max-h-0 overflow-hidden transition-all duration-500">
+          <p class="text-green-900 text-lg italic">「オンラインで日本人と会話ができるようになりました。とても感謝しています。」</p>
+        </div>
+        <p class="mt-4 font-semibold text-green-800">— Bさん（インドネシア）</p>
+      </div>
+
+      <div class="testimonial p-6 rounded-lg shadow-md border-2 border-yellow-400 bg-yellow-100 hover:shadow-lg transition cursor-pointer">
+        <div class="testimonial-content max-h-0 overflow-hidden transition-all duration-500">
+          <p class="text-yellow-900 text-lg italic">「数年間日本に住んでいますが、あのときの授業のおかげで日常生活に困ることがありません。」</p>
+        </div>
+        <p class="mt-4 font-semibold text-yellow-800">— Cさん（ベトナム）</p>
+      </div>
+
+      <div class="testimonial p-6 rounded-lg shadow-md border-2 border-purple-400 bg-purple-100 hover:shadow-lg transition cursor-pointer">
+        <div class="testimonial-content max-h-0 overflow-hidden transition-all duration-500">
+          <p class="text-purple-900 text-lg italic">「講師のサポートが手厚く、いつも安心して勉強できました。」</p>
+        </div>
+        <p class="mt-4 font-semibold text-purple-800">— Dさん（フィリピン）</p>
+      </div>
+
+      <div class="testimonial p-6 rounded-lg shadow-md border-2 border-pink-400 bg-pink-100 hover:shadow-lg transition cursor-pointer">
+        <div class="testimonial-content max-h-0 overflow-hidden transition-all duration-500">
+          <p class="text-pink-900 text-lg italic">「毎回の授業が楽しみで、どんどん日本語が上達しているのを感じます。」</p>
+        </div>
+        <p class="mt-4 font-semibold text-pink-800">— Eさん（ベトナム）</p>
+      </div>
+
+      <div class="testimonial p-6 rounded-lg shadow-md border-2 border-indigo-400 bg-indigo-100 hover:shadow-lg transition cursor-pointer">
+        <div class="testimonial-content max-h-0 overflow-hidden transition-all duration-500">
+          <p class="text-indigo-900 text-lg italic">「個別対応がありがたく、質問しやすい雰囲気が最高です。」</p>
+        </div>
+        <p class="mt-4 font-semibold text-indigo-800">— Fさん（タイ）</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="bg-gray-100 py-16 px-4" id="faq">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="text-3xl font-semibold text-center mb-6">よくある質問</h3>
+    <div class="space-y-4 text-lg" id="faq-container">
+
+      <button class="w-full text-left bg-white p-4 rounded shadow focus:outline-none faq-question">
+        <strong>Q. 週に何回受講できますか？</strong>
+      </button>
+      <div class="hidden p-4 bg-white border-l-4 border-blue-600 rounded-b shadow faq-answer">
+        最大週4回まで受講可能です。一コマ45分です。
+      </div>
+
+      <button class="w-full text-left bg-white p-4 rounded shadow focus:outline-none faq-question">
+        <strong>Q. 授業はオンラインだけですか？</strong>
+      </button>
+      <div class="hidden p-4 bg-white border-l-4 border-blue-600 rounded-b shadow faq-answer">
+        はい、全国どこからでもオンラインで受講いただけます。
+      </div>
+
+      <button class="w-full text-left bg-white p-4 rounded shadow focus:outline-none faq-question">
+        <strong>Q. 支払い方法は何がありますか？</strong>
+      </button>
+      <div class="hidden p-4 bg-white border-l-4 border-blue-600 rounded-b shadow faq-answer">
+        クレジットカード、銀行振込（分割払いも可能）に対応しています。
+      </div>
+
+      <button class="w-full text-left bg-white p-4 rounded shadow focus:outline-none faq-question">
+        <strong>Q. 講師はどんな人ですか？</strong>
+      </button>
+      <div class="hidden p-4 bg-white border-l-4 border-blue-600 rounded-b shadow faq-answer">
+        ベトナム人のPHAM先生、日本人の佐竹先生、日越ハーフの拓也先生が担当しています。
+      </div>
+
+      <button class="w-full text-left bg-white p-4 rounded shadow focus:outline-none faq-question">
+        <strong>Q. 体験レッスンはありますか？</strong>
+      </button>
+      <div class="hidden p-4 bg-white border-l-4 border-blue-600 rounded-b shadow faq-answer">
+        はい、無料の体験レッスンをご用意しています。お問い合わせください。
+      </div>
+
+      <button class="w-full text-left bg-white p-4 rounded shadow focus:outline-none faq-question">
+        <strong>Q. どんな教材を使いますか？</strong>
+      </button>
+      <div class="hidden p-4 bg-white border-l-4 border-blue-600 rounded-b shadow faq-answer">
+        日本で販売されている実用的な日本語教科書を中心に進めます。
+      </div>
+
+      <button class="w-full text-left bg-white p-4 rounded shadow focus:outline-none faq-question">
+        <strong>Q. 授業時間の変更はできますか？</strong>
+      </button>
+      <div class="hidden p-4 bg-white border-l-4 border-blue-600 rounded-b shadow faq-answer">
+        はい、事前にご連絡いただければ柔軟に対応いたします。
+      </div>
+
+      <button class="w-full text-left bg-white p-4 rounded shadow focus:outline-none faq-question">
+        <strong>Q. 初心者でも大丈夫ですか？</strong>
+      </button>
+      <div class="hidden p-4 bg-white border-l-4 border-blue-600 rounded-b shadow faq-answer">
+        もちろんです。初級者からJLPT対策まで丁寧に指導します。
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- お問い合わせ -->
+  <section class="bg-gray-100 py-16 px-4" id="contact">
+    <div class="max-w-3xl mx-auto">
+      <h3 class="text-3xl font-semibold text-center mb-6">お問い合わせ・体験レッスン</h3>
+      <form class="bg-white p-6 rounded shadow space-y-4">
+        <input type="text" placeholder="お名前" class="w-full border p-2 rounded" required />
+        <select name="性別" id="">
+            <option value="option1">男性</option>
+            <option value="option2">女性</option>  
+            <option value="option3">その他</option>
+            <option value="option4">答えたくない</option>
+        </select>
+        <input type="email" placeholder="メールアドレス" class="w-full border p-2 rounded" required />
+        <input type="text" placeholder="住所を入力してください" class="w-full border p-2 rounded" required />
+        <input type="text" placeholder="番町" class="w-full border p-2 rounded" required />
+        <input type="tel" placeholder="電話番号を入力してください" class="w-full border p-2 rounded" required />
+
+        <textarea placeholder="お問い合わせ内容" class="w-full border p-2 rounded h-32" required></textarea>
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">送信する</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="bg-blue-600 text-white text-center py-4">
+    <p>&copy; 2025 PHAM Japanese Class. All rights reserved.</p>
+  </footer>
+
+  <!-- 連絡先・SNSセクション -->
+<section class="bg-gray-50 py-8 px-4 text-center max-w-5xl mx-auto space-y-6">
+  <h4 class="text-xl font-semibold mb-6">連絡先・SNS</h4>
+
+  <div class="flex justify-center space-x-16 text-gray-700">
+    <!-- TikTok -->
+    <a href="https://www.tiktok.com/@your_tiktok_id" target="_blank" rel="noopener" class="hover:text-black flex items-center space-x-2" aria-label="TikTok">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M9.5 2v5.5a3.5 3.5 0 0 0 3.5 3.5h2.5v3h-2.5A6.5 6.5 0 0 1 6 7.5V3H4v12h2v5h3v-5h2.5a6.5 6.5 0 0 0 6.5-6.5V2z"/>
+      </svg>
+      <span>TikTok_PHAM</span>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/your_facebook_id" target="_blank" rel="noopener" class="hover:text-blue-600 flex items-center space-x-2" aria-label="Facebook">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M22 12a10 10 0 1 0-11.5 9.8v-6.9h-2.2v-2.9h2.2V9.4c0-2.2 1.3-3.4 3.3-3.4.95 0 1.95.17 1.95.17v2.1h-1.07c-1.06 0-1.4.67-1.4 1.35v1.64h2.4l-.38 2.9h-2.02v6.9A10 10 0 0 0 22 12"/>
+      </svg>
+      <span>facebook_PAHM</span>
+    </a>
+
+    <!-- LINE -->
+    <a href="https://line.me/R/ti/p/your_line_id" target="_blank" rel="noopener" class="hover:text-green-600 flex items-center space-x-2" aria-label="LINE">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2C6.48 2 2 5.95 2 10.88c0 2.73 1.79 5.13 4.7 6.58l-.56 3.12 3.18-1.75a11.94 11.94 0 0 0 2.68.32c5.52 0 10-3.95 10-8.88S17.52 2 12 2zM9.87 14.87l-1.96-3.09 1.43-1.14 1.7 2.68 3.45-3.14 1.35 1.44-4.53 4.25z"/>
+      </svg>
+      <span>LINE_PHAM</span>
+    </a>
+  </div>
+
+  <div class="text-gray-700 space-y-1 mt-4">
+    <p><strong>Email:</strong> <a href="PHAM@gmail.com" class="hover:underline">PHAM@gamil.com</a></p>
+    <p><strong>電話番号:</strong> <a href="090-0000-0000" class="hover:underline">090-0000-0000</a></p>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- ページのコンテンツ -->
+
+  <!-- JavaScriptをここに置く -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        if (!answer) return;
+        answer.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+</body>
+</html>
